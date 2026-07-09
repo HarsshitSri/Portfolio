@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Notes API",
+    "description": "Stateless REST backend for user registration, JWT authentication, and per-user note management. Includes keyword search, pagination, sorting, enforced endpoint security, and 25 automated tests.",
+    "stack": ["Java 21", "Spring Boot 4", "Spring Security", "MySQL", "JWT", "SpringDoc OpenAPI"],
+    "highlights": ["JWT filter chain", "User-scoped data access", "Swagger UI", "Docker Compose", "25 tests"],
+    "metrics": "7 endpoints · 25 tests · JWT-protected",
+    "github": "https://github.com/HarsshitSri/notes_api",
+    "demo": null,
+    "readme": "https://github.com/HarsshitSri/notes_api#readme",
+    "apiDocs": "https://github.com/HarsshitSri/notes_api#api-overview",
+    "architecture": "https://github.com/HarsshitSri/notes_api/blob/main/docs/README.md"
+  },
+  {
+    "title": "Movie Booking Backend",
+    "description": "Layered monolith REST API for a movie platform — user auth with JWT, movie catalog CRUD, paginated listings, and user ratings with denormalized aggregate scores. Designed to scale toward ticket booking.",
+    "stack": ["Java 21", "Spring Boot 3.5", "Spring Security", "PostgreSQL", "JWT", "Docker"],
+    "highlights": ["Layered architecture", "JPA relationships", "Pagination & sorting", "BCrypt hashing", "Design docs"],
+    "metrics": "8 endpoints · JWT auth · design docs",
+    "github": "https://github.com/HarsshitSri/movie_backend",
+    "demo": null,
+    "readme": "https://github.com/HarsshitSri/movie_backend#readme",
+    "apiDocs": "https://github.com/HarsshitSri/movie_backend/blob/main/docs/api-design.md",
+    "architecture": "https://github.com/HarsshitSri/movie_backend/blob/main/docs/architecture.md"
+  },
+  {
+    "title": "Student Management System",
+    "description": "RESTful backend for managing student records with full CRUD operations. Demonstrates layered architecture with controllers, services, and repositories over a PostgreSQL database via Spring Data JPA.",
+    "stack": ["Java", "Spring Boot", "Spring Data JPA", "PostgreSQL", "Maven"],
+    "highlights": ["REST CRUD", "Layered architecture", "Hibernate ORM", "JUnit testing"],
+    "metrics": "CRUD API · PostgreSQL · JPA",
+    "github": "https://github.com/HarsshitSri/Student_Management_System",
+    "demo": null,
+    "readme": "https://github.com/HarsshitSri/Student_Management_System#readme",
+    "apiDocs": null,
+    "architecture": null
+  }
+]

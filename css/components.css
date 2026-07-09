@@ -1,0 +1,297 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.btn--primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.btn--secondary {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+}
+
+.btn--secondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--color-text-muted);
+  border: 1px dashed var(--color-border);
+}
+
+.btn--ghost:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn--ghost[aria-disabled="true"] {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.3rem 0.65rem;
+  background: var(--color-accent-muted);
+  color: var(--color-accent);
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.tag:hover {
+  border-color: var(--color-accent);
+}
+
+/* Cards — shared */
+.card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: background-color var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base), transform var(--transition-fast);
+}
+
+.card:hover {
+  background: var(--color-bg-card-hover);
+  border-color: var(--color-accent);
+  box-shadow: 0 8px 24px var(--color-shadow);
+  transform: translateY(-2px);
+}
+
+/* Project cards */
+/* Availability badge */
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+  padding: 0.35rem 0.75rem;
+  background: var(--color-accent-muted);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-full);
+}
+
+.availability-badge::before {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: var(--radius-full);
+  background: var(--color-accent);
+  box-shadow: 0 0 0 2px var(--color-accent-muted);
+}
+
+.hero__availability {
+  margin-bottom: var(--space-md);
+}
+
+.project-card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+  letter-spacing: -0.01em;
+}
+
+.project-card__metrics {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.project-card__description {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: var(--space-md);
+}
+
+.project-card__highlights {
+  margin-bottom: var(--space-md);
+}
+
+.project-card__highlights-title {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.project-card__highlights-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.project-card__highlight {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+}
+
+.project-card__stack {
+  margin-bottom: var(--space-lg);
+}
+
+.project-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.project-card__link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+.project-card__link:hover {
+  color: var(--color-accent-hover);
+}
+
+/* Contact cards */
+.contact__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-lg);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.contact__card:hover {
+  border-color: var(--color-accent);
+  background: var(--color-bg-card-hover);
+  transform: translateY(-2px);
+}
+
+.contact__label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-accent);
+}
+
+.contact__value {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* Links */
+.link-arrow {
+  font-weight: 600;
+  color: var(--color-accent);
+  transition: color var(--transition-fast);
+}
+
+.link-arrow:hover {
+  color: var(--color-accent-hover);
+}
+
+/* Theme toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  color: var(--color-accent);
+  background: var(--color-accent-muted);
+}
+
+.theme-toggle__icon {
+  position: absolute;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.theme-toggle__icon--sun {
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
+}
+
+.theme-toggle__icon--moon {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+[data-theme="light"] .theme-toggle__icon--sun {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+[data-theme="light"] .theme-toggle__icon--moon {
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
+}
+
+.theme-toggle {
+  position: relative;
+}
+
+/* Error state */
+.error-message {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: #f87171;
+  padding: var(--space-xl);
+  background: rgba(248, 113, 113, 0.1);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
